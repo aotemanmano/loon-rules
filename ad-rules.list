@@ -49,6 +49,8 @@ DOMAIN-SUFFIX, tapjoy.com, REJECT
 DOMAIN-SUFFIX, unityads.com, REJECT
 DOMAIN-SUFFIX, vungle.com, REJECT
 DOMAIN-SUFFIX, amazon-adsystem.com, REJECT
+DOMAIN-SUFFIX, taboola.com, REJECT
+DOMAIN-SUFFIX, tappx.com, REJECT
 
 # =======================================================
 # Part 4: User Syncing & Tracking
