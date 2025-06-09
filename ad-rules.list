@@ -1,6 +1,7 @@
 Talkatone
 # =======================================================
 DOMAIN-SUFFIX, doubleclick.net, REJECT
+DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
 DOMAIN-SUFFIX, googleadservices.com, REJECT
 DOMAIN-SUFFIX, googlesyndication.com, REJECT
 DOMAIN-SUFFIX, mobilefuse.com, REJECT
@@ -17,3 +18,5 @@ DOMAIN-SUFFIX, appsflyer.com, REJECT
 DOMAIN-SUFFIX, flurry.com, REJECT
 DOMAIN-SUFFIX, singular.net, REJECT
 DOMAIN-SUFFIX, adjust.com, REJECT
+DOMAIN-SUFFIX, amazon-adsystem.com
+DOMAIN-SUFFIX, ad.smaato.net
