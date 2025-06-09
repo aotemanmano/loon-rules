@@ -1,22 +1,62 @@
 Talkatone
 # =======================================================
+# >> Final Consolidated Blocklist - 2025-06-09
+# >> Policy for all rules below: REJECT
+
+[Rule]
+
+# =======================================================
+# Part 1: Google Ad & Analytics Ecosystem
+# 谷歌广告、分析及追踪生态系统
+# =======================================================
+DOMAIN-SUFFIX, admob.com, REJECT
+DOMAIN-SUFFIX, app-measurement.com, REJECT
 DOMAIN-SUFFIX, doubleclick.net, REJECT
-DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
 DOMAIN-SUFFIX, googleadservices.com, REJECT
 DOMAIN-SUFFIX, googlesyndication.com, REJECT
-DOMAIN-SUFFIX, mobilefuse.com, REJECT
-DOMAIN-SUFFIX, inmobi.com, REJECT
-DOMAIN-SUFFIX, pubmatic.com, REJECT
+DOMAIN-SUFFIX, googlesyndication-cn.com, REJECT
+DOMAIN-SUFFIX, googletagservices.com, REJECT
+DOMAIN-SUFFIX, firebaselogging-pa.googleapis.com, REJECT
+# DOMAIN-SUFFIX, gstatic.com, REJECT  # 警告: 可能影响部分网页或谷歌验证码，如遇问题请注释掉此条
+
+# =======================================================
+# Part 2: Apple Analytics
+# 苹果应用分析服务
+# =======================================================
+DOMAIN-SUFFIX, app-analytics-services.com, REJECT
+
+# =======================================================
+# Part 3: Major Ad Networks & Platforms
+# 各大移动广告平台及网络
+# =======================================================
+DOMAIN-SUFFIX, adcolony.com, REJECT
+DOMAIN-SUFFIX, ad-stir.com, REJECT
 DOMAIN-SUFFIX, applovin.com, REJECT
-DOMAIN-SUFFIX, vungle.com, REJECT
-DOMAIN-SUFFIX, unityads.com, REJECT
-DOMAIN-SUFFIX, chartboost.com, REJECT
-DOMAIN-SUFFIX, ironsrc.com, REJECT
-DOMAIN-SUFFIX, agkn.com, REJECT
-DOMAIN-SUFFIX, kochava.com, REJECT
-DOMAIN-SUFFIX, appsflyer.com, REJECT
+DOMAIN-SUFFIX, appodeal.com, REJECT
+DOMAIN-sUFFIX, chartboost.com, REJECT
+DOMAIN-SUFFIX, criteo.com, REJECT
 DOMAIN-SUFFIX, flurry.com, REJECT
-DOMAIN-SUFFIX, singular.net, REJECT
+DOMAIN-SUFFIX, fyber.com, REJECT
+DOMAIN-SUFFIX, inner-active.mobi, REJECT
+DOMAIN-SUFFIX, inmobi.com, REJECT
+DOMAIN-SUFFIX, ironsrc.com, REJECT
+DOMAIN-SUFFIX, mintegral.com, REJECT
+DOMAIN-SUFFIX, mobilefuse.com, REJECT
+DOMAIN-SUFFIX, pangle.io, REJECT
+DOMAIN-SUFFIX, pubmatic.com, REJECT
+DOMAIN-SUFFIX, smaato.net, REJECT
+DOMAIN-SUFFIX, tapjoy.com, REJECT
+DOMAIN-SUFFIX, unityads.com, REJECT
+DOMAIN-SUFFIX, vungle.com, REJECT
+DOMAIN-SUFFIX, amazon-adsystem.com, REJECT
+
+# =======================================================
+# Part 4: User Syncing & Tracking
+# 用户同步、归因及追踪平台
+# =======================================================
 DOMAIN-SUFFIX, adjust.com, REJECT
-DOMAIN-SUFFIX, amazon-adsystem.com
-DOMAIN-SUFFIX, ad.smaato.net
+DOMAIN-SUFFIX, agkn.com, REJECT
+DOMAIN-SUFFIX, appsflyer.com, REJECT
+DOMAIN-SUFFIX, kochava.com, REJECT
+DOMAIN-SUFFIX, singular.net, REJECT
+DOMAIN-SUFFIX, spadsync.com, REJECT
