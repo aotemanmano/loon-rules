@@ -9,7 +9,7 @@
 # =======================================================
 DOMAIN-SUFFIX, googlevoice.com, Google Voice
 DOMAIN-SUFFIX, voice.google.com, Google Voice
-DOMAIN-SUFFIX, l.google.com, Google Voice
+DOMAIN-SUFFIX, lens.l.google.com, Google Voice
 
 
 # =======================================================
