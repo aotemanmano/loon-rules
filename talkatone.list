@@ -1,32 +1,52 @@
-# >> Talkatone Merged Rules - 2025-06-09
+# >> Talkatone 完整规则整合版 - 2025-06-09
+#
+# 说明:
+# 1. 本列表已包含广告屏蔽和App正常使用两部分规则。
+# 2. 规则顺序至关重要，广告屏蔽(REJECT)必须在功能规则(Talkatone)之前。
 
-# --- 1. Core Talkatone & Parent Company ---
-# 应用核心功能、母公司及短链接
+[Rule]
+
+# =======================================================
+# Part 1: 广告与追踪屏蔽规则 (策略: REJECT)
+# 必须放在最前面才能生效
+# =======================================================
+DOMAIN-SUFFIX, doubleclick.net, REJECT
+DOMAIN-SUFFIX, googleadservices.com, REJECT
+DOMAIN-SUFFIX, googlesyndication.com, REJECT
+DOMAIN-SUFFIX, mobilefuse.com, REJECT
+DOMAIN-SUFFIX, inmobi.com, REJECT
+DOMAIN-SUFFIX, pubmatic.com, REJECT
+DOMAIN-SUFFIX, applovin.com, REJECT
+DOMAIN-SUFFIX, vungle.com, REJECT
+DOMAIN-SUFFIX, unityads.com, REJECT
+DOMAIN-SUFFIX, chartboost.com, REJECT
+DOMAIN-SUFFIX, ironsrc.com, REJECT
+DOMAIN-SUFFIX, agkn.com, REJECT
+DOMAIN-SUFFIX, kochava.com, REJECT
+DOMAIN-SUFFIX, appsflyer.com, REJECT
+DOMAIN-SUFFIX, flurry.com, REJECT
+DOMAIN-SUFFIX, singular.net, REJECT
+DOMAIN-SUFFIX, adjust.com, REJECT
+
+# =======================================================
+# Part 2: Talkatone 功能性规则 (策略: Talkatone)
+# 保证App正常通话、收发消息等
+# =======================================================
+# --- 核心服务 ---
 DOMAIN-SUFFIX, talkatone.com, Talkatone
 DOMAIN-SUFFIX, tktn.be, Talkatone
 DOMAIN-SUFFIX, tktn.at, Talkatone
 DOMAIN-SUFFIX, ouala.com, Talkatone
 DOMAIN-SUFFIX, ooma.com, Talkatone
 
-# --- 2. Core Dependencies (Google, AWS, etc.) ---
-# 谷歌推送、Firebase分析、AWS后端等必要依赖
+# --- 必要依赖 ---
 DOMAIN-SUFFIX, mtalk.google.com, Talkatone
 DOMAIN-KEYWORD, firebase, Talkatone
 DOMAIN-SUFFIX, amazonaws.com, Talkatone
 DOMAIN-SUFFIX, ip-api.com, Talkatone
-
-# --- 3. Ads & Analytics ---
-# 广告与分析服务 (建议走Talkatone策略保证功能，或设为REJECT屏蔽)
-DOMAIN-SUFFIX, mobilefuse.com, Talkatone
-DOMAIN-SUFFIX, inmobi.com, Talkatone
-DOMAIN-SUFFIX, kochava.com, Talkatone
-DOMAIN-SUFFIX, doubleclick.net, Talkatone
-DOMAIN-SUFFIX, pubmatic.com, Talkatone
-DOMAIN-SUFFIX, agkn.com, Talkatone
 DOMAIN-SUFFIX, cohere.com, Talkatone
 
-# --- 4. IP-CIDR Rules ---
-# IP规则 (通常不如域名规则稳定，仅作补充)
+# --- IP-CIDR 规则 ---
 IP-CIDR, 50.117.27.0/24, Talkatone
 IP-CIDR, 69.46.75.0/24, Talkatone
 IP-CIDR, 205.164.56.0/24, Talkatone
