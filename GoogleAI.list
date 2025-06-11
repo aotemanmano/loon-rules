@@ -1,0 +1,35 @@
+# >> Google AI (Gemini, Bard, AI Studio) Rules - 2025-06-11
+# >> Policy for all rules below: Google AI
+
+[Rule]
+
+# =======================================================
+# Part 1: Main Frontend & Web
+# 主要前端与网页 (用户直接访问的网站)
+# =======================================================
+DOMAIN-SUFFIX, gemini.google.com, Google AI
+DOMAIN-SUFFIX, bard.google.com, Google AI
+DOMAIN-SUFFIX, aistudio.google.com, Google AI
+
+# =======================================================
+# Part 2: Core API & Backend
+# 核心API与后端 (AI功能的核心，最关键部分)
+# =======================================================
+DOMAIN-SUFFIX, generativeai.googleapis.com, Google AI
+DOMAIN-SUFFIX, aiplatform.googleapis.com, Google AI
+# 以下为更通用的Google API，同样非常重要
+DOMAIN-SUFFIX, googleapis.com, Google AI
+
+# =======================================================
+# Part 3: Static Resources & Content
+# 静态资源与内容 (保证网页正常加载和显示)
+# =======================================================
+DOMAIN-SUFFIX, gstatic.com, Google AI
+DOMAIN-SUFFIX, googleusercontent.com, Google AI
+
+# =======================================================
+# Part 4: Accounts & General Services
+# 账户与通用服务 (保证登录和后台功能正常)
+# =======================================================
+DOMAIN-SUFFIX, google.com, Google AI
+DOMAIN-SUFFIX, clients4.google.com, Google AI
