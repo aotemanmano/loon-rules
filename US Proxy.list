@@ -1,0 +1,24 @@
+# Interactive Brokers (IBKR) Ruleset for Loon
+
+# Part 1: Core Website & Client Portal
+# 核心网站及网页客户端
+# Covers all regional websites (e.g., .com, .com.hk, .co.uk) and the web-based client portal.
+# 涵盖所有区域性网站（如 .com, .com.hk, .co.uk 等）以及网页版客户端。
+DOMAIN-SUFFIX, interactivebrokers.com
+DOMAIN-SUFFIX, ibkr.com
+DOMAIN-SUFFIX, ibkr.com.cn
+
+# Part 2: Trading Platform (TWS) & API Endpoints
+# 交易平台 (TWS) 及 API 接口
+# Essential for the desktop Trader Workstation (TWS) client and API connections.
+# 桌面版交易工作站 (TWS) 客户端及 API 连接所必需的域名。
+DOMAIN-SUFFIX, ibllc.com
+DOMAIN-SUFFIX, ibllc.com.cn
+
+# Part 3: General Keyword-based Catch-all
+# 基于关键词的通用规则
+# A fallback to catch any other subdomains or related services.
+# 用于捕获任何其他子域名或相关服务的备用规则。
+DOMAIN-KEYWORD, interactivebrokers
+DOMAIN-KEYWORD, ibkr
+
