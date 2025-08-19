@@ -22,6 +22,7 @@ DOMAIN-SUFFIX, toolsforhumanity.com
 # 包含应用所使用的分析、监控等服务的域名。
 DOMAIN-SUFFIX, datadoghq.com
 DOMAIN-SUFFIX, world-id-assets.com
+DOMAIN-SUFFIX, pactsafe.io
 
 # Part 3: General Keyword-based Catch-all
 # 基于关键词的通用规则
