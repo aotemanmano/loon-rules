@@ -1,0 +1,24 @@
+# =============================================================
+# World App Ruleset for Loon
+#
+# Description: Redirects all traffic for the World App,
+# developed by Tools for Humanity, to a specific proxy.
+#
+# Author: Gemini
+# Last Updated: 2025-08-05
+# =============================================================
+
+# Part 1: Core Project & App Domains
+# 核心项目及应用域名
+# Covers the main websites and backend services for World App and Worldcoin.
+# 涵盖 World App 和 Worldcoin 项目的主要网站及后端服务。
+DOMAIN-SUFFIX, world.org
+DOMAIN-SUFFIX, worldcoin.org
+DOMAIN-SUFFIX, toolsforhumanity.com
+
+# Part 2: General Keyword-based Catch-all
+# 基于关键词的通用规则
+# A fallback to catch any other subdomains or related services.
+# 用于捕获任何其他子域名或相关服务的备用规则。
+DOMAIN-KEYWORD, worldcoin
+DOMAIN-KEYWORD, worldapp
