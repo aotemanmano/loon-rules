@@ -21,6 +21,7 @@ DOMAIN-SUFFIX, toolsforhumanity.com
 # Includes domains for analytics, monitoring, and other services used by the app.
 # 包含应用所使用的分析、监控等服务的域名。
 DOMAIN-SUFFIX, datadoghq.com
+DOMAIN-SUFFIX, world-id-assets.com
 
 # Part 3: General Keyword-based Catch-all
 # 基于关键词的通用规则
@@ -28,4 +29,5 @@ DOMAIN-SUFFIX, datadoghq.com
 # 用于捕获任何其他子域名或相关服务的备用规则。
 DOMAIN-KEYWORD, worldcoin
 DOMAIN-KEYWORD, worldapp
+
 
