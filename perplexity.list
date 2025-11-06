@@ -1,0 +1,24 @@
+# =============================================================
+# Perplexity.ai Ruleset for Loon
+#
+# Description: Rules for Perplexity.ai services.
+#
+# Author: Gemini
+# Last Updated: 2025-11-06
+# =============================================================
+
+# Part 1: Core Service
+
+# 核心服务
+
+# Covers the main website and API.
+
+DOMAIN-SUFFIX, perplexity.ai
+
+# Part 2: Keyword Fallback
+
+# 关键词回落
+
+# Catches any other related domains.
+
+DOMAIN-KEYWORD, perplexity
