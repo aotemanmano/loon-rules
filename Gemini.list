@@ -1,35 +1,51 @@
-# >> Google AI (Gemini, Bard, AI Studio) Rules - 2025-06-11
 
-[Rule]
+# =============================================================
+# Google Gemini Ruleset for Loon
+#
+# Description: Rules for Google&#39;s Gemini, Bard, DeepMind,
+# and related AI/developer services.
+# Based on blackmatrix7&#39;s list, merged with additions.
+#
+# Author: Gemini &amp; blackmatrix7
+# Last Updated: 2025-11-12
+# =============================================================
 
-# =======================================================
-# Part 1: Main Frontend & Web
-# 主要前端与网页 (用户直接访问的网站)
-# =======================================================
-DOMAIN-SUFFIX, gemini.google.com, Google AI
-DOMAIN-SUFFIX, bard.google.com, Google AI
-DOMAIN-SUFFIX, aistudio.google.com, Google AI
+# Part 1: Core Gemini & AI Services
 
-# =======================================================
-# Part 2: Core API & Backend
-# 核心API与后端 (AI功能的核心，最关键部分)
-# =======================================================
-DOMAIN-SUFFIX, generativeai.googleapis.com, Google AI
-DOMAIN-SUFFIX, aiplatform.googleapis.com, Google AI
-# 以下为更通用的Google API，同样非常重要
-DOMAIN-SUFFIX, googleapis.com, Google AI
+# 核心 Gemini 及 AI 服务
 
-# =======================================================
-# Part 3: Static Resources & Content
-# 静态资源与内容 (保证网页正常加载和显示)
-# =======================================================
-DOMAIN-SUFFIX, gstatic.com, Google AI
-DOMAIN-SUFFIX, googleusercontent.com, Google AI
+DOMAIN-SUFFIX, gemini.google.com
+DOMAIN-SUFFIX, ai.google.com
+DOMAIN, ai.google.dev
 
-# =======================================================
-# Part 4: Accounts & General Services
-# 账户与通用服务 (保证登录和后台功能正常)
-# =======================================================
-DOMAIN-SUFFIX, google.com, Google AI
-DOMAIN-SUFFIX, clients4.google.com, Google AI
+# Part 2: Legacy Domains (Bard / MakerSuite)
 
+# 历史域名 (Bard / MakerSuite)
+
+DOMAIN-SUFFIX, bard.google.com
+DOMAIN, makersuite.google.com
+
+# Part 3: Related Companies & Research
+
+# 关联公司及研究 (DeepMind)
+
+DOMAIN-SUFFIX, deepmind.com
+DOMAIN-SUFFIX, deepmind.google
+
+# Part 4: Backend & API Endpoints
+
+# 后端及 API 接口
+
+DOMAIN-SUFFIX, generativeai.google
+DOMAIN-SUFFIX, apis.google.com
+DOMAIN-SUFFIX, proactivebackend-pa.googleapis.com
+DOMAIN, alkalimakersuite-pa.clients6.google.com
+
+# Part 5: Keywords Fallback
+
+# 关键词回落 (兜底)
+
+DOMAIN-KEYWORD, colab
+DOMAIN-KEYWORD, developerprofiles
+DOMAIN-KEYWORD, generativelanguage
+DOMAIN-KEYWORD, gemini
