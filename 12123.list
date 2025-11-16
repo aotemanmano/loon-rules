@@ -1,0 +1,77 @@
+# =============================================================
+# Traffic Control 12123 (交管12123) Ruleset for Loon
+#
+# Description: An exhaustive ruleset for the &quot;12123&quot; app.
+# Covers core services, backend APIs, and all critical
+# third-party dependencies (Maps, Analytics, Push, Payment).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Government Domains (核心服务)
+
+# \-------------------------------------------------------------
+
+# Covers all app backends, APIs, and web content.
+
+DOMAIN-SUFFIX, 12123.gov.cn
+
+# Main traffic safety portal, highly related.
+
+DOMAIN-SUFFIX, 122.gov.cn
+
+# Part 2: Third-Party Maps (地图服务)
+
+# Required for all location-based services in the app.
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, amap.com
+DOMAIN-SUFFIX, baidu.com
+
+# Part 3: Third-Party Analytics & Push (统计与推送)
+
+# \-------------------------------------------------------------
+
+# Analytics & Crash Reporting (Umeng / Bugly)
+
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+DOMAIN-SUFFIX, bugly.qq.com
+
+# Push Notifications (个推/极光)
+
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+DOMAIN-SUFFIX, jpush.cn
+
+# Part 4: Third-Party Payment & Security (支付与安全)
+
+# \-------------------------------------------------------------
+
+# Payment for fines/fees (China UnionPay)
+
+DOMAIN-SUFFIX, 95516.com
+DOMAIN-SUFFIX, unionpay.com
+
+# Alipay / WeChat Pay (may be used)
+
+DOMAIN-SUFFIX, alipay.com
+DOMAIN-SUFFIX, wechat.com
+
+# Security Captcha (Geetest)
+
+DOMAIN-SUFFIX, geetest.com
+
+# Part 5: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, 12123
+DOMAIN-KEYWORD, 122
+
+# Chinese Keyword
+
+DOMAIN-KEYWORD, 交管
