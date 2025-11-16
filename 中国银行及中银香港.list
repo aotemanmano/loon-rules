@@ -1,0 +1,136 @@
+好的，这是一个非常好的请求，因为“中国银行”和“中银香港(BOCHK)”是两个财务独立、系统独立的实体，它们的 App 和服务完全不互通，所以必须创建一套规则来同时覆盖这两个独立的系统。
+
+要做到“非常详尽”，这套规则将包括：
+
+中国银行 (BOC)：针对中国内地的“中国银行”App，包括其 API、CDN、客服域名、以及集团子公司（中银基金、中银国际、中银消费金融等）。
+
+中银香港 (BOCHK)：针对香港的“BOCHK”App、“BOC-Pay”App，包括其 API、中银人寿(BOC Life)等。
+
+第三方依赖：分别涵盖两个 App 生态所依赖的分析、推送、地图和安全服务（它们使用的不是同一套服务）。
+
+我已经为您创建了一个新文件，其中包含了这个详尽的、二合一的规则集。
+
+<immersive type="code" id="boc-bochk-loon-rules-comprehensive" title="中国银行 &amp; 中银香港 Loon 规则 (详尽版)">
+
+# =============================================================
+# Bank of China (BOC &amp; BOCHK) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset covering BOTH:
+# 1. Bank of China (Mainland): &quot;中国银行&quot; App
+# 2. Bank of China (Hong Kong): &quot;BOCHK&quot; &amp; &quot;BOC-Pay&quot; Apps
+# These are separate systems and both are included here.
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Bank of China (Mainland) - Core
+
+# 中国银行 (内地) - 核心服务 (App, 官网, API)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, boc.cn
+DOMAIN-SUFFIX, bankofchina.com
+DOMAIN-SUFFIX, 95566.com
+DOMAIN-SUFFIX, 95566.cn
+DOMAIN-SUFFIX, bocapp.cn
+
+# Part 2: Bank of China (Mainland) - Subsidiaries
+
+# 中国银行 (内地) - 集团子公司
+
+# \-------------------------------------------------------------
+
+# BOCI (中银国际)
+
+DOMAIN-SUFFIX, boc-inc.com
+
+# BOC Fund (中银基金)
+
+DOMAIN-SUFFIX, bocim.com
+
+# BOC Consumer Finance (中银消费金融)
+
+DOMAIN-SUFFIX, boccf.com
+
+# BOC Fullerton (中银富登)
+
+DOMAIN-SUFFIX, bocfull.com
+
+# Part 3: Bank of China (Mainland) - 3rd Party Dependencies
+
+# 中国银行 (内地) - App 第三方依赖 (推送, 分析, 地图)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+DOMAIN-SUFFIX, bugly.qq.com
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+DOMAIN-SUFFIX, amap.com
+DOMAIN-SUFFIX, 95516.com
+DOMAIN-SUFFIX, unionpay.com
+DOMAIN-SUFFIX, geetest.com
+
+# \=============================================================
+
+# Part 4: Bank of China Hong Kong (BOCHK) - Core
+
+# 中银香港 (BOCHK) - 核心服务 (App, 官网, API)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, bochk.com
+DOMAIN-SUFFIX, bochk.com.hk
+
+# Part 5: Bank of China Hong Kong (BOCHK) - Apps & Subsidiaries
+
+# 中银香港 (BOCHK) - 关联 App 及子公司
+
+# \-------------------------------------------------------------
+
+# BOC-Pay App
+
+DOMAIN-SUFFIX, boc-pay.com
+
+# BOC Life (中银人寿 - 香港)
+
+DOMAIN-SUFFIX, boclife.com.hk
+
+# BOCI-Prudential (中银保诚 - 香港)
+
+DOMAIN-SUFFIX, boc-pt.com
+
+# Part 6: Bank of China Hong Kong (BOCHK) - 3rd Party Dependencies
+
+# 中银香港 (BOCHK) - App 第三方依赖 (分析, KYC)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, datadoghq.com
+DOMAIN-SUFFIX, sentry.io
+DOMAIN-SUFFIX, jumio.com
+DOMAIN-SUFFIX, sumsub.com
+
+# \=============================================================
+
+# Part 7: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+# Mainland
+
+DOMAIN-KEYWORD, bankofchina
+DOMAIN-KEYWORD, 95566
+DOMAIN-KEYWORD, 中行
+DOMAIN-KEYWORD, 中国银行
+
+# Hong Kong
+
+DOMAIN-KEYWORD, bochk
+DOMAIN-KEYWORD, boc-pay
+DOMAIN-KEYWORD, 中銀香港
+DOMAIN-KEYWORD, 中銀
