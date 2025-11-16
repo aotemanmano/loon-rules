@@ -1,3 +1,58 @@
-IP-CIDR,101.226.95.60/32,DIRECT
-DOMAIN,wetype.weixin.qq.com,DIRECT
-DOMAIN,download.weread.qq.com,DIRECT
+# =============================================================
+# WeType (微信输入法) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for the WeType App,
+# with a special focus on the &quot;Sync&quot; feature (同步功能).
+# Covers Core API, Cloud Storage (Tencent COS), and Analytics.
+#
+# Author: Gemini (Contributions from user)
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core App & Sync API (核心API与同步接口)
+
+# This is the primary domain for the WeType app itself.
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, z.weixin.qq.com
+
+# Part 2: Cloud Storage (Tencent COS) - CRITICAL FOR SYNC
+
+# 云端存储 (腾讯云COS) - 对“同步功能”至关重要
+
+# Your personal dictionary and settings are synced to Tencent Cloud.
+
+# 你的个人词典和设置被同步到腾讯云。
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, myqcloud.com
+DOMAIN-SUFFIX, qcloud.com
+DOMAIN-SUFFIX, tencent-cloud.com
+
+# IP Fallback for Tencent Cloud (added by user)
+
+IP-CIDR, 101.226.95.60/32
+
+# Part 3: General WeChat/Tencent Dependencies (通用依赖)
+
+# For authentication, analytics, and crash reporting.
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, weixin.qq.com
+DOMAIN-SUFFIX, wechat.com
+DOMAIN-SUFFIX, tencent.com
+DOMAIN-SUFFIX, qq.com
+DOMAIN-SUFFIX, bugly.qq.com
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+
+# Part 4: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, wetype
+DOMAIN-KEYWORD, weixin.input
