@@ -1,0 +1,57 @@
+# =============================================================
+# Club Sim (HKT) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for the Club Sim App.
+# This covers the core app, parent company backends (HKT/CSL),
+# and all critical third-party dependencies (Push, KYC, Analytics).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Service (Club Sim App & Website)
+
+# 核心服务 (App, 官网, API)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, clubsim.com.hk
+
+# Part 2: Parent Company Backends (HKT / CSL / PCCW)
+
+# 母公司后端 (账户, 支付, 基础设施)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, hkt.com
+DOMAIN-SUFFIX, csl.com
+DOMAIN-SUFFIX, pccw.com
+
+# Part 3: App Dependencies (International)
+
+# 国际 App 依赖 (推送, 分析, KYC)
+
+# \-------------------------------------------------------------
+
+# Push Notifications (Google)
+
+DOMAIN-SUFFIX, fcm.googleapis.com
+
+# Analytics & Crash Reporting
+
+DOMAIN-SUFFIX, datadoghq.com
+DOMAIN-SUFFIX, sentry.io
+DOMAIN-SUFFIX, firebase.google.com
+
+# KYC (身份认证)
+
+DOMAIN-SUFFIX, jumio.com
+DOMAIN-SUFFIX, sumsub.com
+
+# Part 4: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, clubsim
+DOMAIN-KEYWORD, hkt
+DOMAIN-KEYWORD, csl
