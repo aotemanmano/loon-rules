@@ -1,0 +1,93 @@
+# =============================================================
+# Air China (中国国航) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for the Air China App
+# and website. Covers core services, Phoenix Miles (loyalty),
+# TravelSky (backend), Star Alliance, and critical
+# third-party dependencies (Push, Analytics, Maps, Payment).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Airline & Booking (国航官网与订票)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, airchina.com.cn
+DOMAIN-SUFFIX, airchina.com
+DOMAIN-SUFFIX, airchina.ltd
+
+# Cargo (国货航)
+
+DOMAIN-SUFFIX, airchina-cargo.com
+
+# Part 2: Core Backend System (中航信 TravelSky)
+
+# 核心后端系统 (中航信)
+
+# Crucial for booking, check-in, and flight status for almost
+
+# all Chinese airlines. (几乎所有中国航司的订票、值机和航班动态)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, travelsky.com
+
+# Part 3: Loyalty Program (凤凰知音 Phoenix Miles)
+
+# 忠诚度计划 (凤凰知音)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, phoenixmiles.com.cn
+DOMAIN-SUFFIX, phoenixmiles.com
+DOMAIN-SUFFIX, ffprod.com
+
+# Part 4: Airline Alliance (星空联盟 Star Alliance)
+
+# 航空公司联盟 (星空联盟)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, staralliance.com
+
+# Part 5: App Third-Party Dependencies (App 依赖)
+
+# \-------------------------------------------------------------
+
+# Push Notifications (个推/极光推送)
+
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+DOMAIN-SUFFIX, jpush.cn
+
+# Analytics & Crash Reporting (友盟/Bugly)
+
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+DOMAIN-SUFFIX, bugly.qq.com
+
+# Embedded Maps (高德/百度地图)
+
+DOMAIN-SUFFIX, amap.com
+DOMAIN-SUFFIX, baidu.com
+
+# Payment (银联/支付宝)
+
+DOMAIN-SUFFIX, 95516.com
+DOMAIN-SUFFIX, unionpay.com
+DOMAIN-SUFFIX, alipay.com
+
+# Part 6: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, airchina
+DOMAIN-KEYWORD, phoenixmiles
+
+# Chinese Keywords
+
+DOMAIN-KEYWORD, 国航
+DOMAIN-KEYWORD, 凤凰知音
