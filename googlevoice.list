@@ -23,7 +23,7 @@ DOMAIN-SUFFIX, lens.l.google.com
 # \=======================================================
 
 DOMAIN-SUFFIX, voice.clients6.google.com
-DOMAIN-SUFFIX, voice-pa.googleapis.com
+DOMAIN-KEYWORD, voice-pa.googleapis.com
 
 # ↑ 以上是Google Voice专用的API，以下是与其他Google服务共用的
 
