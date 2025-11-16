@@ -1,0 +1,26 @@
+# =============================================================
+# Credit Karma Ruleset for Loon
+#
+# Description: Rules for the Credit Karma website and app.
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Service Domains
+
+# 核心服务域名
+
+# Covers the main website, app APIs, and regional variations.
+
+DOMAIN-SUFFIX, creditkarma.com
+DOMAIN-SUFFIX, creditkarma.ca
+DOMAIN-SUFFIX, creditkarma.co.uk
+
+# Part 2: Keyword Fallback
+
+# 关键词回落
+
+# Catches any other related domains.
+
+DOMAIN-KEYWORD, creditkarma
