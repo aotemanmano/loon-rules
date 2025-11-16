@@ -1,0 +1,52 @@
+# =============================================================
+# x.ai (Grok) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for x.ai (Grok).
+# This is NOT a standalone service. It is deeply integrated
+# with X (Twitter) and requires all X/Twitter domains
+# to function properly.
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core x.ai Domain
+
+# x.ai 核心域名
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, x.ai
+
+# Part 2: X Platform (Core Dependency)
+
+# X 平台 (核心依赖)
+
+# Grok is integrated into X, requiring X's core domains.
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, x.com
+DOMAIN-SUFFIX, twitter.com
+
+# Part 3: X Platform Content & Links (Core Dependency)
+
+# X 平台内容与链接 (核心依赖)
+
+# Required for links, media, and APIs within the X platform.
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, t.co
+DOMAIN-SUFFIX, twimg.com
+
+# Part 4: Keyword Fallbacks
+
+# 关键词回落 (兜底规则)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, xai
+DOMAIN-KEYWORD, grok
+DOMAIN-KEYWORD, x
+DOMAIN-KEYWORD, twitter
