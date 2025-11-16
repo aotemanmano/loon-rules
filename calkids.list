@@ -1,0 +1,72 @@
+# =============================================================
+# CalKIDS (California Kids) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for the CalKIDS program.
+# Covers the core website, the program administrator&#39;s portal
+# (Vestwell), and all critical third-party dependencies
+# (SSO, Analytics, Security, Support).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Program Website (核心项目网站)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, calkids.org
+
+# Part 2: Program Administrator & Portal (项目管理人及后台门户)
+
+# This is CRITICAL. Vestwell is the financial tech
+
+# provider that runs the CalKIDS savings portal.
+
+# (这是最关键的规则。Vestwell是运行CalKIDS储蓄门户的金融技术提供商)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, vestwell.com
+
+# Part 3: Parent Government Body (上级管理机构)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, scholarshare.ca.gov
+DOMAIN-SUFFIX, treasurer.ca.gov
+
+# Part 4: Common Third-Party Dependencies (US Apps)
+
+# 常见第三方依赖 (美区 App / 网站)
+
+# \-------------------------------------------------------------
+
+# Analytics (统计分析)
+
+DOMAIN-SUFFIX, google-analytics.com
+DOMAIN-SUFFIX, googletagmanager.com
+
+# CDN & Fonts (字体及CDN)
+
+DOMAIN-SUFFIX, fonts.googleapis.com
+DOMAIN-SUFFIX, fonts.gstatic.com
+
+# Security & Captcha (安全与验证码)
+
+DOMAIN, www.google.com
+DOMAIN-SUFFIX, recaptcha.net
+
+# SSO / Login (单点登录)
+
+DOMAIN-SUFFIX, okta.com
+
+# Support (客服系统)
+
+DOMAIN-SUFFIX, zendesk.com
+
+# Part 5: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, calkids
+DOMAIN-KEYWORD, scholarshare
