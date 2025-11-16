@@ -1,0 +1,89 @@
+# =============================================================
+# Worldcoin &amp; World App Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for the entire
+# Worldcoin ecosystem, including the app, protocol (World ID),
+# company (Tools for Humanity), and critical blockchain
+# &amp; third-party dependencies (Auth, RPC, Analytics).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Project & Company
+
+# 核心项目及公司
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, worldcoin.org
+DOMAIN-SUFFIX, toolsforhumanity.com
+
+# Part 2: App & Protocol Domains
+
+# 应用及协议域名 (World App / World ID)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, world.org
+DOMAIN-SUFFIX, world.app
+DOMAIN-SUFFIX, world-id.org
+
+# Part 3: Blockchain Infrastructure
+
+# 区块链基础设施 (L2, RPC, Explorers)
+
+# \-------------------------------------------------------------
+
+# Optimism (Primary L2)
+
+DOMAIN-SUFFIX, optimism.io
+
+# Polygon (Used for World ID)
+
+DOMAIN-SUFFIX, polygon.technology
+
+# RPC Providers (Alchemy, Infura - for node access)
+
+DOMAIN-SUFFIX, alchemy.com
+DOMAIN-SUFFIX, infura.io
+
+# Block Explorers (Etherscan, Optimistic Etherscan)
+
+DOMAIN-SUFFIX, etherscan.io
+DOMAIN-SUFFIX, optimistic.etherscan.io
+
+# Part 4: Critical Third-Party Dependencies
+
+# 关键第三方依赖 (认证、分析、验证码)
+
+# \-------------------------------------------------------------
+
+# Authentication (Auth0 is used for login)
+
+DOMAIN-SUFFIX, auth0.com
+
+# Analytics & Monitoring (As identified before)
+
+DOMAIN-SUFFIX, datadoghq.com
+
+# Crash Reporting
+
+DOMAIN-SUFFIX, sentry.io
+
+# Captcha (验证码)
+
+DOMAIN-SUFFIX, hcaptcha.com
+DOMAIN, www.google.com
+DOMAIN, www.recaptcha.net
+
+# Part 5: Keyword Fallbacks
+
+# 关键词回落 (兜底规则)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, worldcoin
+DOMAIN-KEYWORD, worldapp
+DOMAIN-KEYWORD, worldid
+DOMAIN-KEYWORD, toolsforhumanity
