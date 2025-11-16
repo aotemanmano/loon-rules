@@ -1,0 +1,70 @@
+# =============================================================
+# OKX (Ouyi) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for all OKX/OKEx/Ouyi
+# services, including web, app, APIs, WebSockets, and
+# third-party dependencies (KYC, Captcha, Analytics).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Domains (OKX)
+# 核心域名 (OKX 品牌)
+# Covers main website, app APIs, and WebSocket endpoints.
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, okx.com
+DOMAIN-SUFFIX, okx.media
+DOMAIN-SUFFIX, okx-sec.com
+DOMAIN-SUFFIX, okx-static.com
+
+# Part 2: Legacy Domains (OKEx)
+# 历史域名 (OKEx 品牌)
+# Still used for redirects, assets, or old API versions.
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, okex.com
+DOMAIN-SUFFIX, okex.media
+
+# Part 3: Regional & Alternative Domains (Ouyi)
+# 区域与备用域名 (欧易品牌)
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, ouyi.exchange
+DOMAIN-SUFFIX, ouyi.com
+
+# Part 4: Parent Company & Core CDN
+# 母公司及核心 CDN
+# OK Group and associated static asset domains.
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, okg.com
+DOMAIN-SUFFIX, okg-static.com
+DOMAIN-SUFFIX, okx.cdn
+DOMAIN-SUFFIX, okx-cdn.com
+
+# Part 5: Critical Third-Party Services
+# 关键第三方服务
+# Required for app functionality (Captcha, KYC, Analytics).
+# -------------------------------------------------------------
+# Captcha (验证码)
+DOMAIN-SUFFIX, hcaptcha.com
+DOMAIN, www.google.com
+DOMAIN, www.recaptcha.net
+
+# KYC (身份认证)
+DOMAIN-SUFFIX, jumio.com
+DOMAIN-SUFFIX, sumsub.com
+
+# Analytics & Error Tracking (应用分析与错误追踪)
+DOMAIN-SUFFIX, datadoghq.com
+DOMAIN-SUFFIX, sentry.io
+
+# Support (客服系统)
+DOMAIN-SUFFIX, zendesk.com
+
+# Part 6: Keyword Fallbacks
+# 关键词回落 (兜底规则)
+# Catches any other related subdomains or new domains.
+# -------------------------------------------------------------
+DOMAIN-KEYWORD, okx
+DOMAIN-KEYWORD, okex
+DOMAIN-KEYWORD, ouyi
+DOMAIN-KEYWORD, okgroup
