@@ -1,45 +1,70 @@
-# >> Google Voice Rules - 2025-06-09
-# >> Policy for all rules below: Google Voice
-
-[Rule]
-
 # =======================================================
+# Google Voice Ruleset (Comprehensive)
+# Based on user-provided list.
+# Last Updated: 2025-11-16
+# =======================================================
+
 # Part 1: Core Services & Web Interface
+
 # 核心服务及网页端
-# =======================================================
-DOMAIN-SUFFIX, googlevoice.com, Google Voice
-DOMAIN-SUFFIX, voice.google.com, Google Voice
-DOMAIN-SUFFIX, lens.l.google.com, Google Voice
-DOMAIN-SUFFIX, web.voice.telephony.goog,
 
+# \=======================================================
 
-# =======================================================
+DOMAIN-SUFFIX, googlevoice.com
+DOMAIN-SUFFIX, voice.google.com
+DOMAIN-SUFFIX, lens.l.google.com
+
+# \=======================================================
+
 # Part 2: API Endpoints
-# 应用功能所需的各项API接口
-# =======================================================
-DOMAIN-SUFFIX, voice.clients6.google.com, Google Voice
-DOMAIN-SUFFIX, voice-pa.googleapis.com, Google Voice
-# ↑ 以上是Google Voice专用的API，以下是与其他Google服务共用的
-DOMAIN-SUFFIX, clients4.google.com, Google Voice
-DOMAIN-SUFFIX, googleapis.com, Google Voice
 
-# =======================================================
+# 应用功能所需的各项API接口
+
+# \=======================================================
+
+DOMAIN-SUFFIX, voice.clients6.google.com
+DOMAIN-SUFFIX, voice-pa.googleapis.com
+
+# ↑ 以上是Google Voice专用的API，以下是与其他Google服务共用的
+
+DOMAIN-SUFFIX, clients4.google.com
+DOMAIN-SUFFIX, googleapis.com
+
+# \=======================================================
+
 # Part 3: Real-Time Communication (Most Critical)
+
 # 实时通信 (最关键部分，影响通话质量)
-# =======================================================
+
+# \=======================================================
+
 # STUN/TURN servers for NAT traversal
-DOMAIN-KEYWORD, stun, Google Voice
+
+DOMAIN-KEYWORD, stun
+
 # ↑ 此条规则可覆盖 stun.l.google.com, stun.services.google.com 等所有stun服务器
 
-# =======================================================
-# Part 4: Push Notifications
-# 推送通知 (保证来电、短信及时提醒)
-# =======================================================
-DOMAIN-SUFFIX, mtalk.google.com, Google Voice
+# Web & App Telephony Service
 
-# =======================================================
+DOMAIN-SUFFIX, web.voice.telephony.goog
+
+# \=======================================================
+
+# Part 4: Push Notifications
+
+# 推送通知 (保证来电、短信及时提醒)
+
+# \=======================================================
+
+DOMAIN-SUFFIX, mtalk.google.com
+
+# \=======================================================
+
 # Part 5: Media & Content
+
 # 媒体与内容 (用于MMS彩信、语音留言等)
-# =======================================================
-DOMAIN-SUFFIX, googleusercontent.com, Google Voice
-DOMAIN-SUFFIX, gvt1.com, Google Voice
+
+# \=======================================================
+
+DOMAIN-SUFFIX, googleusercontent.com
+DOMAIN-SUFFIX, gvt1.com
