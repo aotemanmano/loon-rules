@@ -1,0 +1,98 @@
+# =============================================================
+# Industrial Bank (CIB) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for the entire CIB group,
+# including:
+# 1. &quot;兴业银行&quot; (Main Bank App)
+# 2. &quot;兴业生活&quot; (Credit Card / Good Life App)
+# 3. All subsidiaries (Fund, Trust, Leasing) and
+#    critical third-party dependencies (Push, Maps, Payment).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Banking (Main App & Website)
+
+# 核心银行业务 (主 App 及官网)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, cib.com.cn
+DOMAIN-SUFFIX, cib.cn
+DOMAIN-SUFFIX, 95561.com.cn
+DOMAIN-SUFFIX, industrial-bank.com
+
+# Part 2: Credit Card & Consumer Finance ("兴业生活" App)
+
+# 信用卡与消费金融 ("兴业生活" App)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, cibfin.com.cn
+DOMAIN-SUFFIX, cibsp.com.cn
+DOMAIN-SUFFIX, cib-consumer-finance.com
+
+# Part 3: Subsidiaries (集团子公司)
+
+# \-------------------------------------------------------------
+
+# CIB Fund (兴业基金)
+
+DOMAIN-SUFFIX, cib-fund.com.cn
+
+# CIB Trust (兴业信托)
+
+DOMAIN-SUFFIX, ci-trust.com
+
+# CIB Leasing (兴业租赁)
+
+DOMAIN-SUFFIX, cib-leasing.com
+
+# CIB Financial Markets (兴业数金)
+
+DOMAIN-SUFFIX, cibfintech.com
+
+# Part 4: App Third-Party Dependencies (App 依赖)
+
+# \-------------------------------------------------------------
+
+# Push Notifications (个推/极光推送)
+
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+DOMAIN-SUFFIX, jpush.cn
+
+# Analytics & Crash Reporting (友盟/Bugly)
+
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+DOMAIN-SUFFIX, bugly.qq.com
+
+# Embedded Maps (高德/百度地图)
+
+DOMAIN-SUFFIX, amap.com
+DOMAIN-SUFFIX, baidu.com
+
+# Payment (银联)
+
+DOMAIN-SUFFIX, 95516.com
+DOMAIN-SUFFIX, unionpay.com
+
+# Security (验证码)
+
+DOMAIN-SUFFIX, geetest.com
+
+# Part 5: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, cib
+DOMAIN-KEYWORD, industrial-bank
+DOMAIN-KEYWORD, 95561
+
+# Chinese Keywords
+
+DOMAIN-KEYWORD, 兴业
+DOMAIN-KEYWORD, 兴业生活
