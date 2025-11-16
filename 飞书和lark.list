@@ -1,0 +1,73 @@
+# =============================================================
+# Feishu &amp; Lark Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset covering BOTH:
+# 1. Feishu (飞书): The Chinese domestic service.
+# 2. Lark: The International/Global service.
+# These are separate systems and both are included here.
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Feishu (飞书 - Chinese Domestic Service)
+
+# (中国内地版 - 核心服务, API, CDN)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, feishu.cn
+DOMAIN-SUFFIX, feishucdn.com
+DOMAIN-SUFFIX, feishuctl.com
+DOMAIN-SUFFIX, feishumeeting.com
+DOMAIN-SUFFIX, feishu-business.com
+
+# Part 2: Lark (International/Global Service)
+
+# (国际版 - 核心服务, API, CDN)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, larksuite.com
+DOMAIN-SUFFIX, lark-api.com
+DOMAIN-SUFFIX, lark-s.com
+DOMAIN-SUFFIX, larkmirror.com
+DOMAIN-SUFFIX, larkmail.com
+DOMAIN-SUFFIX, larkvideo.com
+DOMAIN-SUFFIX, larkvc.com
+
+# Part 3: Common Bytedance Infrastructure (通用字节跳动设施)
+
+# (主要用于两者的 App 性能/错误监控)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, slardar.com
+DOMAIN-SUFFIX, sentry.io
+DOMAIN-SUFFIX, ibytedance.com
+DOMAIN-SUFFIX, byteoversea.com
+
+# Part 4: Third-Party Dependencies (第三方依赖)
+
+# \-------------------------------------------------------------
+
+# Push Notifications (Lark needs Google, Feishu needs domestic)
+
+# (推送服务: Lark 依赖 Google, 飞书依赖国内推送)
+
+DOMAIN-SUFFIX, fcm.googleapis.com
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+DOMAIN-SUFFIX, jpush.cn
+
+# Part 5: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+# Feishu (China)
+
+DOMAIN-KEYWORD, feishu
+
+# Lark (Global)
+
+DOMAIN-KEYWORD, larksuite
