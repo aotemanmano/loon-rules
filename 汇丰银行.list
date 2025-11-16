@@ -1,0 +1,117 @@
+# =============================================================
+# HSBC (Global) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset covering THREE separate
+# HSBC ecosystems:
+# 1. HSBC China (汇丰中国) - Mainland App &amp; Dependencies
+# 2. HSBC Hong Kong (汇丰香港) - HK App &amp; PayMe Dependencies
+# 3. HSBC US (汇丰美国) - US App &amp; Dependencies
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Global & Corporate (全球及企业)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, hsbc.com
+DOMAIN-SUFFIX, hsbc.net
+
+# \=============================================================
+
+# Part 2: HSBC China (汇丰中国 - 内地) - Core
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, hsbc.com.cn
+DOMAIN-SUFFIX, hsbc.cn
+
+# Part 3: HSBC China - Mainland App Dependencies
+
+# (内地 App 依赖: 推送, 地图, 分析, 支付, 安全)
+
+# \-------------------------------------------------------------
+
+# Push (推送)
+
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+DOMAIN-SUFFIX, jpush.cn
+
+# Analytics & Crash (统计与崩溃)
+
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+DOMAIN-SUFFIX, bugly.qq.com
+
+# Maps (地图 - 用于查找网点)
+
+DOMAIN-SUFFIX, amap.com
+
+# Payment (支付 - 银联)
+
+DOMAIN-SUFFIX, 95516.com
+DOMAIN-SUFFIX, unionpay.com
+
+# Security (安全 - 验证码)
+
+DOMAIN-SUFFIX, geetest.com
+
+# \=============================================================
+
+# Part 4: HSBC Hong Kong (汇丰香港) - Core & Apps
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, hsbc.com.hk
+DOMAIN-SUFFIX, hsbc.hk
+
+# PayMe (HSBC's popular HK payment app)
+
+DOMAIN-SUFFIX, payme.hsbc
+
+# Part 5: HSBC US (汇丰美国) - Core
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, hsbc.us
+DOMAIN-SUFFIX, us.hsbc.com
+
+# Part 6: Global App Dependencies (for HK & US Apps)
+
+# (香港 & 美国 App 依赖: 推送, 分析, KYC)
+
+# \-------------------------------------------------------------
+
+# Push (Google Push)
+
+DOMAIN-SUFFIX, fcm.googleapis.com
+
+# Analytics & Crash (Datadog / Sentry)
+
+DOMAIN-SUFFIX, datadoghq.com
+DOMAIN-SUFFIX, sentry.io
+
+# KYC (身份认证)
+
+DOMAIN-SUFFIX, jumio.com
+DOMAIN-SUFFIX, sumsub.com
+
+# US Bank Linking (Plaid)
+
+DOMAIN-SUFFIX, plaid.com
+
+# \=============================================================
+
+# Part 7: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, hsbc
+DOMAIN-KEYWORD, payme
+
+# Chinese Keyword
+
+DOMAIN-KEYWORD, 汇丰
