@@ -1,10 +1,103 @@
-DOMAIN-SUFFIX,tb.cn
-DOMAIN-SUFFIX,aliexpress.com
-DOMAIN-SUFFIX,alitrip.com
-DOMAIN-SUFFIX,taobaokeji.com
-DOMAIN-SUFFIX,xianyucdn.com
-DOMAIN-SUFFIX,alicdn.com
-DOMAIN-SUFFIX,xianyu.com
-DOMAIN-SUFFIX,goofish.com
-DOMAIN-SUFFIX,aliyun.com
-DOMAIN-SUFFIX,taobao.com
+# =============================================================
+# Taobao &amp; Xianyu Ruleset for Loon (Comprehensive Alibaba Eco)
+#
+# Description: An exhaustive &quot;All-in-One&quot; list for Taobao,
+# Xianyu, Tmall, Alipay (Payment), Cainiao (Logistics),
+# Alimama (Ads), Alicdn (CDN), Amap (Maps), Youku (Video),
+# and Umeng (Analytics).
+#
+# Author: Gemini (Merged from user&#39;s list)
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core E-Commerce (Taobao & Tmall)
+
+# 核心电商 (淘宝 & 天猫)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, taobao.com
+DOMAIN-SUFFIX, tb.cn
+DOMAIN-SUFFIX, taobaocdn.com
+DOMAIN-SUFFIX, taobaokeji.com
+DOMAIN-SUFFIX, tmall.com
+DOMAIN-SUFFIX, tmall.hk
+
+# Part 2: Xianyu Core (闲鱼)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, xianyu.com
+DOMAIN-SUFFIX, goofish.com
+DOMAIN-SUFFIX, xianyucdn.com
+
+# Part 3: Alibaba Group Core (阿里集团核心)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, alibaba.com
+DOMAIN-SUFFIX, alicdn.com
+DOMAIN-SUFFIX, aliyun.com
+
+# Ad & Product Listing (广告与商品列表)
+
+DOMAIN-SUFFIX, alimama.com
+
+# Other Ecosystem Apps (生态内其他 App)
+
+DOMAIN-SUFFIX, alitrip.com
+DOMAIN-SUFFIX, aliexpress.com
+
+# Part 4: Payment (支付宝 - 支付命脉)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, alipay.com
+DOMAIN-SUFFIX, antfin.com
+
+# Part 5: Logistics (菜鸟 - 物流命脉)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, cainiao.com
+
+# Part 6: Maps & Video (地图与视频)
+
+# \-------------------------------------------------------------
+
+# Address Management (收货地址管理)
+
+DOMAIN-SUFFIX, amap.com
+
+# Product Videos & Livestreaming (商品视频 & 淘宝直播)
+
+DOMAIN-SUFFIX, youku.com
+
+# Part 7: Analytics & Push (统计与推送)
+
+# \-------------------------------------------------------------
+
+# Alibaba's own analytics/push service
+
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+DOMAIN-SUFFIX, bugly.qq.com
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+DOMAIN-SUFFIX, jpush.cn
+
+# Part 8: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, taobao
+DOMAIN-KEYWORD, tmall
+DOMAIN-KEYWORD, xianyu
+DOMAIN-KEYWORD, alipay
+DOMAIN-KEYWORD, cainiao
+DOMAIN-KEYWORD, 淘宝
+DOMAIN-KEYWORD, 天猫
+DOMAIN-KEYWORD, 闲鱼
+DOMAIN-KEYWORD, 支付宝
+DOMAIN-KEYWORD, 菜鸟
