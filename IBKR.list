@@ -1,0 +1,79 @@
+# =============================================================
+# Interactive Brokers (IBKR) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for all IBKR services,
+# including all regional websites, TWS client, APIs, and
+# critical third-party dependencies (KYC, Captcha, Support).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Domains (IBKR Brand)
+
+# 核心域名 (IBKR 品牌)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, interactivebrokers.com
+DOMAIN-SUFFIX, ibkr.com
+
+# Part 2: Regional Websites (Global)
+
+# 区域性网站 (覆盖全球)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, interactivebrokers.ca
+DOMAIN-SUFFIX, interactivebrokers.ie
+DOMAIN-SUFFIX, interactivebrokers.co.uk
+DOMAIN-SUFFIX, interactivebrokers.co.in
+DOMAIN-SUFFIX, interactivebrokers.co.jp
+DOMAIN-SUFFIX, interactivebrokers.com.hk
+DOMAIN-SUFFIX, interactivebrokers.com.sg
+DOMAIN-SUFFIX, interactivebrokers.com.au
+DOMAIN-SUFFIX, ibkr.com.cn
+
+# Part 3: Trading Backends (TWS & API)
+
+# 交易后端 (TWS 客户端及 API)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, ibllc.com
+DOMAIN-SUFFIX, ibllc.com.cn
+
+# TWS Cloud Settings (TWS云端同步设置)
+
+DOMAIN-SUFFIX, s3.amazonaws.com
+
+# Part 4: Critical Third-Party Dependencies
+
+# 关键第三方依赖
+
+# \-------------------------------------------------------------
+
+# Captcha (登录和操作验证码)
+
+DOMAIN-SUFFIX, hcaptcha.com
+DOMAIN, www.google.com
+DOMAIN, www.recaptcha.net
+
+# KYC (身份认证)
+
+DOMAIN-SUFFIX, jumio.com
+DOMAIN-SUFFIX, sumsub.com
+
+# Support & Analytics (客服及应用分析)
+
+DOMAIN-SUFFIX, zendesk.com
+DOMAIN-SUFFIX, datadoghq.com
+
+# Part 5: Keyword Fallbacks
+
+# 关键词回落 (兜底规则)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, interactivebrokers
+DOMAIN-KEYWORD, ibkr
