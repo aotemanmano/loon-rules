@@ -1,0 +1,102 @@
+# =============================================================
+# China Merchants Bank (CMB) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for both CMB Apps:
+# 1. &quot;招商银行&quot; (Main Bank App)
+# 2. &quot;掌上生活&quot; (Credit Card &amp; Life App)
+# Covers all APIs, CDNs, Push, and Third-Party dependencies.
+#
+# Author: Gemini (Merged from user&#39;s list)
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: "招商银行" App (Main Bank Service)
+
+# “招商银行”App (一卡通/储蓄卡/银行业务)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, cmbchina.com
+DOMAIN-SUFFIX, cmb.cn
+DOMAIN-SUFFIX, cmbchina.biz
+DOMAIN-SUFFIX, cmbchina.cn
+DOMAIN-SUFFIX, cmbuat.com
+DOMAIN-SUFFIX, cmbt.cn
+DOMAIN-SUFFIX, cmburl.cn
+DOMAIN-SUFFIX, 4008205555.com
+DOMAIN-SUFFIX, 8008205555.cn
+DOMAIN-SUFFIX, 8008205555.com
+
+# Part 2: "掌上生活" App (Credit Card Service)
+
+# “掌上生活”App (信用卡/商城/积分/饭票业务)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, cmblife.com
+DOMAIN-SUFFIX, 95555.com
+DOMAIN-SUFFIX, cmbimg.com
+DOMAIN-SUFFIX, cmbimg.cn
+
+# Part 3: Subsidiaries & Joint Ventures (Corporate)
+
+# 关联公司及合资企业 (集团资产)
+
+# \-------------------------------------------------------------
+
+# Cigna & CMB (招商信诺)
+
+DOMAIN-SUFFIX, cignacmb-ipmi.com
+DOMAIN-SUFFIX, cignacmb.com
+DOMAIN-SUFFIX, cignacmbamc.com
+DOMAIN-SUFFIX, test-cignacmb.com
+
+# CMB Leasing (招银租赁)
+
+DOMAIN-SUFFIX, cmb-leasing.com
+
+# CMB International (招银国际)
+
+DOMAIN-SUFFIX, cmbi.com.hk
+
+# Wing Lung Bank (招商永隆银行)
+
+DOMAIN-SUFFIX, cmbwinglungbank.com
+
+# China Merchants Fund (招商基金)
+
+DOMAIN-SUFFIX, cmf.biz
+DOMAIN-SUFFIX, cmf.ltd
+DOMAIN-SUFFIX, cmfchina.com
+DOMAIN-SUFFIX, cmfunds.cn
+
+# Part 4: Common Third-Party Dependencies (Analytics & Maps)
+
+# 常见的第三方依赖 (应用分析、崩溃上报、地图)
+
+# \-------------------------------------------------------------
+
+# Analytics (Umeng)
+
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+
+# Crash Reporting (Tencent Bugly)
+
+DOMAIN-SUFFIX, bugly.qq.com
+
+# Embedded Maps (AutoNavi / 高德地图)
+
+DOMAIN-SUFFIX, amap.com
+
+# Part 5: Keyword Fallbacks (Catch-all)
+
+# 关键词回落 (兜底规则)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, cmbchina
+DOMAIN-KEYWORD, cmblife
+DOMAIN-KEYWORD, zhaoshang
+DOMAIN-KEYWORD, 95555
