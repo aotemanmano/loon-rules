@@ -1,0 +1,100 @@
+# =============================================================
+# China Eastern Airlines (CEA) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for the China Eastern App
+# and website. Covers core services, Eastern Miles (loyalty),
+# subsidiaries (Shanghai Air), TravelSky (backend), SkyTeam,
+# and critical third-party dependencies (Push, Maps, Payment).
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core Airline & Booking (东航官网与订票)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, ceair.com
+DOMAIN-SUFFIX, ce-air.com
+DOMAIN-SUFFIX, 95530.com
+
+# Part 2: Core Backend System (中航信 TravelSky)
+
+# 核心后端系统 (中航信)
+
+# Crucial for booking, check-in, and flight status for almost
+
+# all Chinese airlines. (几乎所有中国航司的订票、值机和航班动态)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, travelsky.com
+
+# Part 3: Loyalty Program (东方万里行 Eastern Miles)
+
+# 忠诚度计划 (东方万里行)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, easternmiles.com
+
+# Part 4: Subsidiaries (下属航空公司)
+
+# \-------------------------------------------------------------
+
+# Shanghai Airlines (上海航空)
+
+DOMAIN-SUFFIX, shanghai-air.com
+
+# China United Airlines (中国联合航空)
+
+DOMAIN-SUFFIX, flycua.com
+
+# Part 5: Airline Alliance (天合联盟 SkyTeam)
+
+# 航空公司联盟 (天合联盟)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, skyteam.com
+
+# Part 6: App Third-Party Dependencies (App 依赖)
+
+# \-------------------------------------------------------------
+
+# Push Notifications (个推/极光推送)
+
+DOMAIN-SUFFIX, getui.com
+DOMAIN-SUFFIX, igexin.com
+DOMAIN-SUFFIX, jpush.cn
+
+# Analytics & Crash Reporting (友盟/Bugly)
+
+DOMAIN-SUFFIX, umeng.com
+DOMAIN-SUFFIX, umeng.co
+DOMAIN-SUFFIX, umtrack.com
+DOMAIN-SUFFIX, bugly.qq.com
+
+# Embedded Maps (高德/百度地图)
+
+DOMAIN-SUFFIX, amap.com
+DOMAIN-SUFFIX, baidu.com
+
+# Payment (银联/支付宝/微信支付)
+
+DOMAIN-SUFFIX, 95516.com
+DOMAIN-SUFFIX, unionpay.com
+DOMAIN-SUFFIX, alipay.com
+DOMAIN-SUFFIX, wechat.com
+
+# Part 7: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, ceair
+DOMAIN-KEYWORD, easternmiles
+
+# Chinese Keywords
+
+DOMAIN-KEYWORD, 东航
+DOMAIN-KEYWORD, 东方万里行
