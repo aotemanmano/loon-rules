@@ -1,0 +1,107 @@
+# =============================================================
+# ChatGPT (OpenAI) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for all OpenAI services.
+# This is CRITICAL. A simple &quot;openai.com&quot; rule is not enough.
+# This list includes all dependencies for:
+# 1. Login (Auth0)
+# 2. Captcha (Arkose Labs - the &quot;puzzle&quot; verification)
+# 3. Payments (Stripe - for ChatGPT Plus)
+# 4. User Content (oaiuc.com - for DALL-E images/uploads)
+# 5. App Monitoring (Sentry / Datadog / LaunchDarkly)
+#
+# Author: Gemini
+# Last Updated: 2025-11-16
+# =============================================================
+
+# Part 1: Core OpenAI & ChatGPT Domains
+
+# 核心域名 (官网, API, App)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, openai.com
+DOMAIN-SUFFIX, chatgpt.com
+DOMAIN-SUFFIX, oai.com
+
+# Part 2: Core CDN & User Content (CRITICAL)
+
+# 核心 CDN 与用户内容 (DALL-E 图片/文件上传)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, oaiuc.com
+DOMAIN-SUFFIX, cdn.openai.com
+DOMAIN-SUFFIX, cdn.chatgpt.com
+
+# Part 3: Security & Captcha (CRITICAL FOR LOGIN/USE)
+
+# 安全与人机验证 (登录/使用的命脉)
+
+# \-------------------------------------------------------------
+
+# Arkose Labs (The "puzzle" / "rotate the animal" captcha)
+
+# (Arkose Labs - "旋转动物" / "拼图" 验证码)
+
+DOMAIN-SUFFIX, arkoselabs.com
+DOMAIN-SUFFIX, funcaptcha.com
+
+# Google Captcha (备用验证码)
+
+DOMAIN-SUFFIX, recaptcha.net
+DOMAIN, www.google.com
+
+# Part 4: Authentication (Login)
+
+# 身份认证 (登录)
+
+# \-------------------------------------------------------------
+
+# OpenAI uses Auth0 for its login system
+
+DOMAIN-SUFFIX, auth0.com
+DOMAIN-SUFFIX, okta.com
+
+# Part 5: Payments (ChatGPT Plus)
+
+# 支付系统 (ChatGPT Plus 订阅)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, stripe.com
+DOMAIN-SUFFIX, stripe.network
+
+# Part 6: App/Web Dependencies (Monitoring & Support)
+
+# 应用依赖 (监控, 功能开关, 客服)
+
+# \-------------------------------------------------------------
+
+# Error Tracking (错误上报)
+
+DOMAIN-SUFFIX, sentry.io
+
+# Analytics & Monitoring (性能监控)
+
+DOMAIN-SUFFIX, datadoghq.com
+
+# Feature Flags (功能开关)
+
+DOMAIN-SUFFIX, launchdarkly.com
+
+# Support Widgets (客服插件)
+
+DOMAIN-SUFFIX, intercom.io
+DOMAIN-SUFFIX, zendesk.com
+
+# Push Notifications (App 推送)
+
+DOMAIN-SUFFIX, fcm.googleapis.com
+
+# Part 7: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, openai
+DOMAIN-KEYWORD, chatgpt
