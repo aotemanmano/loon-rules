@@ -1,0 +1,76 @@
+# =============================================================
+# Bybit Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for the Bybit App
+# and website. Covers core domains, APIs, WebSockets, CDNs,
+# and all critical third-party dependencies (KYC, Captcha,
+# Analytics, Support).
+#
+# Author: Gemini
+# Last Updated: 2025-11-17
+# =============================================================
+
+# Part 1: Core Domains (App, API & WebSocket)
+
+# 核心域名 (App, API 接口, WebSocket 行情)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, bybit.com
+
+# Part 2: Core CDN & Static Assets
+
+# 核心 CDN 及静态资源 (加载图片、JS、CSS)
+
+# \-------------------------------------------------------------
+
+DOMAIN-SUFFIX, bybit-cdn.com
+DOMAIN-SUFFIX, bycs.cdn
+DOMAIN-SUFFIX, bybit.com.cdn.cloudflare.net
+
+# Part 3: Critical Third-Party (KYC & Security)
+
+# 关键第三方依赖 (KYC 身份认证 & 人机验证)
+
+# (CRITICAL: App will fail login or onboarding if these are blocked)
+
+# \-------------------------------------------------------------
+
+# Captcha (hCaptcha, reCAPTCHA, Geetest)
+
+DOMAIN-SUFFIX, hcaptcha.com
+DOMAIN, www.google.com
+DOMAIN-SUFFIX, recaptcha.net
+DOMAIN-SUFFIX, geetest.com
+
+# KYC (Jumio, Sumsub - for identity verification)
+
+DOMAIN-SUFFIX, jumio.com
+DOMAIN-SUFFIX, sumsub.com
+
+# Part 4: Other Dependencies (Monitoring & Support)
+
+# 其他依赖 (性能监控 & 客服系统)
+
+# \-------------------------------------------------------------
+
+# Analytics & Crash Reporting
+
+DOMAIN-SUFFIX, datadoghq.com
+DOMAIN-SUFFIX, sentry.io
+
+# Push Notifications
+
+DOMAIN-SUFFIX, fcm.googleapis.com
+
+# Support Chat
+
+DOMAIN-SUFFIX, zendesk.com
+DOMAIN-SUFFIX, intercom.io
+
+# Part 5: Keyword Fallbacks (关键词兜底)
+
+# \-------------------------------------------------------------
+
+DOMAIN-KEYWORD, bybit
+DOMAIN-KEYWORD, bycs
