@@ -6,7 +6,7 @@
 # and all critical third-party dependencies (KYC, Captcha,
 # Analytics, Support).
 #
-# Author: Gemini
+# Author: Gemini (Contributions from user)
 # Last Updated: 2025-11-17
 # =============================================================
 
@@ -17,6 +17,10 @@
 # \-------------------------------------------------------------
 
 DOMAIN-SUFFIX, bybit.com
+
+# WebSocket & API (Added by user)
+
+DOMAIN-SUFFIX, bybdc6.com
 
 # Part 2: Core CDN & Static Assets
 
