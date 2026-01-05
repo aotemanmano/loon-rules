@@ -23,17 +23,12 @@ DOMAIN-SUFFIX, chineseinla.com
 
 # \-------------------------------------------------------------
 
-DOMAIN-SUFFIX, googlesyndication.com
-DOMAIN-SUFFIX, googletagservices.com
-DOMAIN-SUFFIX, googleadservices.com
 DOMAIN-SUFFIX, doubleclick.net
 
 # Part 3: Analytics & Site Statistics (统计分析)
 
 # \-------------------------------------------------------------
 
-DOMAIN-SUFFIX, google-analytics.com
-DOMAIN-SUFFIX, googletagmanager.com
 DOMAIN-SUFFIX, quantserve.com
 DOMAIN-SUFFIX, ampproject.org
 
@@ -41,28 +36,6 @@ DOMAIN-SUFFIX, ampproject.org
 
 # \-------------------------------------------------------------
 
-# Web Fonts (网页字体)
-
-DOMAIN-SUFFIX, fonts.googleapis.com
-DOMAIN-SUFFIX, fonts.gstatic.com
-
-# Facebook Plugins (Facebook 插件)
-
-DOMAIN-SUFFIX, facebook.com
-DOMAIN-SUFFIX, facebook.net
-DOMAIN-SUFFIX, fbcdn.net
-
-# Twitter Plugins (Twitter 插件)
-
-DOMAIN-SUFFIX, twitter.com
-DOMAIN-SUFFIX, twimg.com
-
-# YouTube Embedded Videos (内嵌油管视频)
-
-DOMAIN-SUFFIX, youtube.com
-DOMAIN-SUFFIX, ytimg.com
-
-# Part 5: Keyword Fallbacks (关键词兜底)
 
 # \-------------------------------------------------------------
 
