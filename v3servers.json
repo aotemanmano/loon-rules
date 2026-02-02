@@ -1,8 +1,8 @@
 {
     "servers": [
         {
-            "name": "FN",
-            "address": "https://d.yanglife.cn:53623"
+            "name": "render",
+            "address": "https://anisette-v3-server-ihyb.onrender.com"
         }
     ]
 }
