@@ -1,8 +1,9 @@
 {
   "servers": [
     {
-      "name": "FN Server",
+      "name": "FN",
       "address": "https://d.yanglife.cn:53623"
+    }
   ],
   "cache": "https://servers.sidestore.io/servers.json.hash"
 }
