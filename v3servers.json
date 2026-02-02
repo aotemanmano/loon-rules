@@ -2,7 +2,7 @@
     "servers": [
         {
             "name": "render",
-            "address": "https://anisette-v3-server-ihyb.onrender.com"
+            "address": "https://anisette-v3-server-latest-20sn.onrender.com"
         }
     ]
 }
