@@ -1,0 +1,59 @@
+# =============================================================
+# Honor of Kings (Global) Ruleset for Loon (Comprehensive)
+#
+# Description: An exhaustive ruleset for Honor of Kings (HOK)
+# global version, including core game servers, Level Infinite
+# publisher services, Tencent global infrastructure (GCloud, INTL),
+# and anti-cheat/support dependencies.
+#
+# Author: Gemini
+# Last Updated: 2026-04-23
+# =============================================================
+
+# Part 1: Core Game Domains
+# 核心游戏域名 (王者荣耀国际版专属)
+# Covers main website, game announcements, and specific event pages.
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, honorofkings.com
+DOMAIN-SUFFIX, hokglobal.com
+
+# Part 2: Publisher Services (Level Infinite)
+# 发行商服务 (Level Infinite 品牌)
+# Used for publisher-level accounts, cross-game events, and web stores.
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, levelinfinite.com
+DOMAIN-SUFFIX, levelinfinitepass.com
+
+# Part 3: Tencent Global Infrastructure
+# 腾讯海外游戏底层架构与公共组件 (Proxima Beta / INTL / GCloud)
+# Crucial for game login, updates, CDN downloads, and matchmaking.
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, proximabeta.com
+DOMAIN-SUFFIX, intlgame.com
+DOMAIN-SUFFIX, igamecj.com
+DOMAIN-SUFFIX, tencentgames.com
+DOMAIN-SUFFIX, gcloudcs.com
+DOMAIN-SUFFIX, tencent-cloud.com
+
+# Part 4: Anti-Cheat & Security
+# 反作弊与安全验证组件 (Anti-Cheat Expert)
+# Required for game launch and background security checks.
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, anticheatexpert.com
+DOMAIN-SUFFIX, ace.tencent.com
+
+# Part 5: Customer Support & Telemetry
+# 客服系统与运行遥测
+# Used for in-game help centers and crash reporting.
+# -------------------------------------------------------------
+DOMAIN-SUFFIX, helpshift.com
+
+# Part 6: Keyword Fallbacks
+# 关键词回落 (兜底规则)
+# Catches unlisted CDN nodes, dynamic subdomains, or new API routes.
+# -------------------------------------------------------------
+DOMAIN-KEYWORD, honorofkings
+DOMAIN-KEYWORD, hokglobal
+DOMAIN-KEYWORD, levelinfinite
+DOMAIN-KEYWORD, proximabeta
+DOMAIN-KEYWORD, intlgame
